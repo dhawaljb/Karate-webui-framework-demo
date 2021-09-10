@@ -1,0 +1,1231 @@
+14:10:31.933 [main] DEBUG com.intuit.karate.http.HttpServer - server started: desktop-fr2a99r:63731
+14:10:33.201 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9515
+14:10:33.202 [chromedriver_1631263233199] DEBUG c.i.k.d.chromedriver_1631263233199 - command: [src/test/java/resources/chromedriver.exe, --port=9515, --user-data-dir=E:\Dhawal_Automation\Karate\Karate-webui-framework-demo\target\chromedriver_1631263233199, --windows-size=1920,1080, --incognito, --no-sandbox], working dir: target\chromedriver_1631263233199
+14:10:33.203 [main] DEBUG c.i.k.d.chromedriver_1631263233199 - poll attempt #0 for port to be ready - localhost:9515
+14:10:33.627 [chromedriver_1631263233199-out] DEBUG c.i.k.d.chromedriver_1631263233199 - Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 9515
+14:10:33.628 [chromedriver_1631263233199-out] DEBUG c.i.k.d.chromedriver_1631263233199 - Only local connections are allowed.
+14:10:33.628 [chromedriver_1631263233199-out] DEBUG c.i.k.d.chromedriver_1631263233199 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+14:10:33.635 [chromedriver_1631263233199-out] DEBUG c.i.k.d.chromedriver_1631263233199 - ChromeDriver was started successfully.
+14:10:34.240 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9515/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:9515
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+14:10:34.965 [main] DEBUG com.intuit.karate - response time in milliseconds: 721
+1 < 200
+1 < Content-Length: 787
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"93.0.4577.63","chrome":{"chromedriverVersion":"93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135})","userDataDir":"C:\\Users\\Dhawal\\AppData\\Local\\Temp\\scoped_dir52848_1175172"},"goog:chromeOptions":{"debuggerAddress":"localhost:55802"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"072123aa4be137e77b8fc2180a69b4e5"}}
+14:10:34.976 [main] DEBUG c.i.k.d.chromedriver_1631263233199 - init session id: 072123aa4be137e77b8fc2180a69b4e5
+14:10:35.148 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 60
+2 > Host: localhost:9515
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+2 > Accept-Encoding: gzip,deflate
+{"url":"http:\/\/www.seleniumframework.com\/Practiceform\/"}
+
+14:11:04.775 [main] DEBUG com.intuit.karate - response time in milliseconds: 29627
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+14:11:04.841 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:9515
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+14:11:04.993 [main] DEBUG com.intuit.karate - response time in milliseconds: 151
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":840,"width":1552,"x":-8,"y":-8}}
+14:11:05.002 [main] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/url
+4 > Host: localhost:9515
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+4 > Accept-Encoding: gzip,deflate
+
+
+14:11:05.015 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+4 < 200
+4 < Content-Length: 58
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":"http://www.seleniumframework.com/Practiceform/"}
+14:11:05.018 [main] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/element
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 39
+5 > Host: localhost:9515
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+5 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:05.039 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
+5 < 200
+5 < Content-Length: 88
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"826dfbe6-7cb2-4d57-8077-afea3339fad8"}}
+14:11:05.045 [main] DEBUG com.intuit.karate - request:
+6 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/execute/sync
+6 > Content-Type: application/json; charset=UTF-8
+6 > Content-Length: 127
+6 > Host: localhost:9515
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+6 > Accept-Encoding: gzip,deflate
+{"script":"return document.evaluate(\"\/\/button[@id='button1']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+14:11:05.144 [main] DEBUG com.intuit.karate - response time in milliseconds: 97
+6 < 200
+6 < Content-Length: 14
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":null}
+14:11:05.149 [main] DEBUG com.intuit.karate - request:
+7 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/url
+7 > Host: localhost:9515
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+7 > Accept-Encoding: gzip,deflate
+
+
+14:11:05.165 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+7 < 200
+7 < Content-Length: 58
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":"http://www.seleniumframework.com/Practiceform/"}
+14:11:05.169 [main] DEBUG com.intuit.karate - request:
+8 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/element
+8 > Content-Type: application/json; charset=UTF-8
+8 > Content-Length: 39
+8 > Host: localhost:9515
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+8 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:05.184 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+8 < 200
+8 < Content-Length: 88
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"826dfbe6-7cb2-4d57-8077-afea3339fad8"}}
+14:11:05.185 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #1
+14:11:05.686 [main] DEBUG com.intuit.karate - request:
+9 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/url
+9 > Host: localhost:9515
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+9 > Accept-Encoding: gzip,deflate
+
+
+14:11:05.692 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+9 < 200
+9 < Content-Length: 58
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":"http://www.seleniumframework.com/Practiceform/"}
+14:11:05.694 [main] DEBUG com.intuit.karate - request:
+10 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/element
+10 > Content-Type: application/json; charset=UTF-8
+10 > Content-Length: 39
+10 > Host: localhost:9515
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+10 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:05.705 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+10 < 200
+10 < Content-Length: 88
+10 < Content-Type: application/json; charset=utf-8
+10 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"826dfbe6-7cb2-4d57-8077-afea3339fad8"}}
+14:11:05.707 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #2
+14:11:06.215 [main] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/url
+11 > Host: localhost:9515
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+11 > Accept-Encoding: gzip,deflate
+
+
+14:11:06.221 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+11 < 200
+11 < Content-Length: 58
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":"http://www.seleniumframework.com/Practiceform/"}
+14:11:06.223 [main] DEBUG com.intuit.karate - request:
+12 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/element
+12 > Content-Type: application/json; charset=UTF-8
+12 > Content-Length: 39
+12 > Host: localhost:9515
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+12 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:06.231 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+12 < 200
+12 < Content-Length: 88
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"826dfbe6-7cb2-4d57-8077-afea3339fad8"}}
+14:11:06.232 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #3
+14:11:06.735 [main] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/url
+13 > Host: localhost:9515
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+13 > Accept-Encoding: gzip,deflate
+
+
+14:11:06.740 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+13 < 200
+13 < Content-Length: 58
+13 < Content-Type: application/json; charset=utf-8
+13 < cache-control: no-cache
+{"value":"http://www.seleniumframework.com/Practiceform/"}
+14:11:06.743 [main] DEBUG com.intuit.karate - request:
+14 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/element
+14 > Content-Type: application/json; charset=UTF-8
+14 > Content-Length: 39
+14 > Host: localhost:9515
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+14 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:06.752 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+14 < 200
+14 < Content-Length: 88
+14 < Content-Type: application/json; charset=utf-8
+14 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"826dfbe6-7cb2-4d57-8077-afea3339fad8"}}
+14:11:06.753 [main] WARN  c.intuit.karate.driver.DriverOptions - waiting for document to change: failed after 3 retries and 1606 milliseconds
+14:11:06.760 [main] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/window/handles
+15 > Host: localhost:9515
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+15 > Accept-Encoding: gzip,deflate
+
+
+14:11:06.763 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
+15 < 200
+15 < Content-Length: 99
+15 < Content-Type: application/json; charset=utf-8
+15 < cache-control: no-cache
+{"value":["CDwindow-B0BBEE121393C74FF4C1C4A6483CCD8E","CDwindow-0490F6E1A1A07F413858D8570CF8B2FC"]}
+14:11:06.764 [main] DEBUG com.intuit.karate - request:
+16 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/window
+16 > Content-Type: application/json; charset=UTF-8
+16 > Content-Length: 54
+16 > Host: localhost:9515
+16 > Connection: Keep-Alive
+16 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+16 > Accept-Encoding: gzip,deflate
+{"handle":"CDwindow-B0BBEE121393C74FF4C1C4A6483CCD8E"}
+
+14:11:06.775 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+16 < 200
+16 < Content-Length: 14
+16 < Content-Type: application/json; charset=utf-8
+16 < cache-control: no-cache
+{"value":null}
+14:11:06.778 [main] DEBUG com.intuit.karate - request:
+17 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/title
+17 > Host: localhost:9515
+17 > Connection: Keep-Alive
+17 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+17 > Accept-Encoding: gzip,deflate
+
+
+14:11:06.796 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+17 < 200
+17 < Content-Length: 45
+17 < Content-Type: application/json; charset=utf-8
+17 < cache-control: no-cache
+{"value":"Selenium Framework | Practiceform"}
+14:11:06.798 [main] DEBUG com.intuit.karate - request:
+18 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/url
+18 > Host: localhost:9515
+18 > Connection: Keep-Alive
+18 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+18 > Accept-Encoding: gzip,deflate
+
+
+14:11:06.805 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+18 < 200
+18 < Content-Length: 58
+18 < Content-Type: application/json; charset=utf-8
+18 < cache-control: no-cache
+{"value":"http://www.seleniumframework.com/Practiceform/"}
+14:11:06.808 [main] DEBUG com.intuit.karate - request:
+19 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/window
+19 > Content-Type: application/json; charset=UTF-8
+19 > Content-Length: 54
+19 > Host: localhost:9515
+19 > Connection: Keep-Alive
+19 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+19 > Accept-Encoding: gzip,deflate
+{"handle":"CDwindow-0490F6E1A1A07F413858D8570CF8B2FC"}
+
+14:11:06.829 [main] DEBUG com.intuit.karate - response time in milliseconds: 21
+19 < 200
+19 < Content-Length: 14
+19 < Content-Type: application/json; charset=utf-8
+19 < cache-control: no-cache
+{"value":null}
+14:11:06.832 [main] DEBUG com.intuit.karate - request:
+20 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/title
+20 > Host: localhost:9515
+20 > Connection: Keep-Alive
+20 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+20 > Accept-Encoding: gzip,deflate
+
+
+14:11:12.178 [main] DEBUG com.intuit.karate - response time in milliseconds: 5346
+20 < 200
+20 < Content-Length: 70
+20 < Content-Type: application/json; charset=utf-8
+20 < cache-control: no-cache
+{"value":"Selenium Framework | Selenium, Cucumber, Ruby, Java et al."}
+14:11:12.182 [main] DEBUG com.intuit.karate - request:
+21 > POST http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/window/maximize
+21 > Content-Type: application/json; charset=UTF-8
+21 > Content-Length: 2
+21 > Host: localhost:9515
+21 > Connection: Keep-Alive
+21 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+21 > Accept-Encoding: gzip,deflate
+{}
+
+14:11:12.312 [main] DEBUG com.intuit.karate - response time in milliseconds: 130
+21 < 200
+21 < Content-Length: 51
+21 < Content-Type: application/json; charset=utf-8
+21 < cache-control: no-cache
+{"value":{"height":840,"width":1552,"x":-8,"y":-8}}
+14:11:12.320 [main] DEBUG com.intuit.karate - request:
+22 > GET http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/url
+22 > Host: localhost:9515
+22 > Connection: Keep-Alive
+22 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+22 > Accept-Encoding: gzip,deflate
+
+
+14:11:12.324 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+22 < 200
+22 < Content-Length: 45
+22 < Content-Type: application/json; charset=utf-8
+22 < cache-control: no-cache
+{"value":"http://www.seleniumframework.com/"}
+14:11:12.335 [main] DEBUG com.intuit.karate - request:
+23 > DELETE http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5/window
+23 > Host: localhost:9515
+23 > Connection: Keep-Alive
+23 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+23 > Accept-Encoding: gzip,deflate
+
+
+14:11:12.404 [main] DEBUG com.intuit.karate - response time in milliseconds: 69
+23 < 200
+23 < Content-Length: 55
+23 < Content-Type: application/json; charset=utf-8
+23 < cache-control: no-cache
+{"value":["CDwindow-B0BBEE121393C74FF4C1C4A6483CCD8E"]}
+14:11:12.406 [main] DEBUG com.intuit.karate - request:
+24 > DELETE http://localhost:9515/session/072123aa4be137e77b8fc2180a69b4e5
+24 > Host: localhost:9515
+24 > Connection: Keep-Alive
+24 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+24 > Accept-Encoding: gzip,deflate
+
+
+14:11:12.471 [main] DEBUG com.intuit.karate - response time in milliseconds: 65
+24 < 200
+24 < Content-Length: 14
+24 < Content-Type: application/json; charset=utf-8
+24 < cache-control: no-cache
+{"value":null}
+14:11:12.472 [main] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1631263233199
+14:11:12.501 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 56933
+14:11:12.501 [main] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9515 not available, will use: 56933
+14:11:12.502 [main] DEBUG c.i.k.d.chromedriver_1631263272500 - poll attempt #0 for port to be ready - localhost:56933
+14:11:12.507 [chromedriver_1631263233199] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/resources/chromedriver.exe, --port=9515, --user-data-dir=E:\Dhawal_Automation\Karate\Karate-webui-framework-demo\target\chromedriver_1631263233199, --windows-size=1920,1080, --incognito, --no-sandbox] working dir: target\chromedriver_1631263233199
+14:11:12.513 [chromedriver_1631263272500] DEBUG c.i.k.d.chromedriver_1631263272500 - command: [src/test/java/resources/chromedriver.exe, --port=56933, --user-data-dir=E:\Dhawal_Automation\Karate\Karate-webui-framework-demo\target\chromedriver_1631263272500, --windows-size=1920,1080, --incognito, --no-sandbox], working dir: target\chromedriver_1631263272500
+14:11:12.609 [chromedriver_1631263272500-out] DEBUG c.i.k.d.chromedriver_1631263272500 - Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 56933
+14:11:12.609 [chromedriver_1631263272500-out] DEBUG c.i.k.d.chromedriver_1631263272500 - Only local connections are allowed.
+14:11:12.609 [chromedriver_1631263272500-out] DEBUG c.i.k.d.chromedriver_1631263272500 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+14:11:12.617 [chromedriver_1631263272500-out] DEBUG c.i.k.d.chromedriver_1631263272500 - ChromeDriver was started successfully.
+14:11:13.016 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:56933/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:56933
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+14:11:13.923 [main] DEBUG com.intuit.karate - response time in milliseconds: 907
+1 < 200
+1 < Content-Length: 788
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"93.0.4577.63","chrome":{"chromedriverVersion":"93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135})","userDataDir":"C:\\Users\\Dhawal\\AppData\\Local\\Temp\\scoped_dir1764_585337750"},"goog:chromeOptions":{"debuggerAddress":"localhost:56936"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"8ac8603fff78514a976fe4d723380678"}}
+14:11:13.925 [main] DEBUG c.i.k.d.chromedriver_1631263272500 - init session id: 8ac8603fff78514a976fe4d723380678
+14:11:13.964 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 74
+2 > Host: localhost:56933
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+2 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/www.seleniumeasy.com\/test\/ajax-form-submit-demo.html"}
+
+14:11:16.110 [main] DEBUG com.intuit.karate - response time in milliseconds: 2146
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+14:11:16.112 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:56933
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+14:11:16.231 [main] DEBUG com.intuit.karate - response time in milliseconds: 118
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":840,"width":1552,"x":-8,"y":-8}}
+14:11:16.236 [main] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 50
+4 > Host: localhost:56933
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+4 > Accept-Encoding: gzip,deflate
+{"using":"xpath","value":"\/\/input[@id='title']"}
+
+14:11:16.252 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+4 < 200
+4 < Content-Length: 88
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"8ff7759b-de90-4c12-8cd3-c7de9029f447"}}
+14:11:16.254 [main] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element/8ff7759b-de90-4c12-8cd3-c7de9029f447/value
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 25
+5 > Host: localhost:56933
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+5 > Accept-Encoding: gzip,deflate
+{"text":"Test Form Name"}
+
+14:11:16.366 [main] DEBUG com.intuit.karate - response time in milliseconds: 111
+5 < 200
+5 < Content-Length: 14
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":null}
+14:11:16.368 [main] DEBUG com.intuit.karate - request:
+6 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element
+6 > Content-Type: application/json; charset=UTF-8
+6 > Content-Length: 59
+6 > Host: localhost:56933
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+6 > Accept-Encoding: gzip,deflate
+{"using":"xpath","value":"\/\/textarea[@id='description']"}
+
+14:11:16.386 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+6 < 200
+6 < Content-Length: 88
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"7480677a-fdc0-4b60-9c78-7180e00083e6"}}
+14:11:16.388 [main] DEBUG com.intuit.karate - request:
+7 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element/7480677a-fdc0-4b60-9c78-7180e00083e6/value
+7 > Content-Type: application/json; charset=UTF-8
+7 > Content-Length: 32
+7 > Host: localhost:56933
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+7 > Accept-Encoding: gzip,deflate
+{"text":"Test Form Description"}
+
+14:11:16.465 [main] DEBUG com.intuit.karate - response time in milliseconds: 76
+7 < 200
+7 < Content-Length: 14
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":null}
+14:11:16.467 [main] DEBUG com.intuit.karate - request:
+8 > GET http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/url
+8 > Host: localhost:56933
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+8 > Accept-Encoding: gzip,deflate
+
+
+14:11:16.473 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+8 < 200
+8 < Content-Length: 72
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/ajax-form-submit-demo.html"}
+14:11:16.474 [main] DEBUG com.intuit.karate - request:
+9 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element
+9 > Content-Type: application/json; charset=UTF-8
+9 > Content-Length: 39
+9 > Host: localhost:56933
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+9 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:16.488 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+9 < 200
+9 < Content-Length: 88
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b3bc3b53-7fd8-4d3b-8cfd-c4d816fec2f6"}}
+14:11:16.490 [main] DEBUG com.intuit.karate - request:
+10 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/execute/sync
+10 > Content-Type: application/json; charset=UTF-8
+10 > Content-Length: 129
+10 > Host: localhost:56933
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+10 > Accept-Encoding: gzip,deflate
+{"script":"return document.evaluate(\"\/\/input[@id='btn-submit']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+14:11:17.151 [main] DEBUG com.intuit.karate - response time in milliseconds: 661
+10 < 200
+10 < Content-Length: 14
+10 < Content-Type: application/json; charset=utf-8
+10 < cache-control: no-cache
+{"value":null}
+14:11:17.153 [main] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/url
+11 > Host: localhost:56933
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+11 > Accept-Encoding: gzip,deflate
+
+
+14:11:17.160 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+11 < 200
+11 < Content-Length: 72
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/ajax-form-submit-demo.html"}
+14:11:17.163 [main] DEBUG com.intuit.karate - request:
+12 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element
+12 > Content-Type: application/json; charset=UTF-8
+12 > Content-Length: 39
+12 > Host: localhost:56933
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+12 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:17.171 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+12 < 200
+12 < Content-Length: 88
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b3bc3b53-7fd8-4d3b-8cfd-c4d816fec2f6"}}
+14:11:17.171 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #1
+14:11:17.690 [main] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/url
+13 > Host: localhost:56933
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+13 > Accept-Encoding: gzip,deflate
+
+
+14:11:17.708 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+13 < 200
+13 < Content-Length: 72
+13 < Content-Type: application/json; charset=utf-8
+13 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/ajax-form-submit-demo.html"}
+14:11:17.714 [main] DEBUG com.intuit.karate - request:
+14 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element
+14 > Content-Type: application/json; charset=UTF-8
+14 > Content-Length: 39
+14 > Host: localhost:56933
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+14 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:17.730 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+14 < 200
+14 < Content-Length: 88
+14 < Content-Type: application/json; charset=utf-8
+14 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b3bc3b53-7fd8-4d3b-8cfd-c4d816fec2f6"}}
+14:11:17.731 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #2
+14:11:18.234 [main] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/url
+15 > Host: localhost:56933
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+15 > Accept-Encoding: gzip,deflate
+
+
+14:11:18.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+15 < 200
+15 < Content-Length: 72
+15 < Content-Type: application/json; charset=utf-8
+15 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/ajax-form-submit-demo.html"}
+14:11:18.241 [main] DEBUG com.intuit.karate - request:
+16 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element
+16 > Content-Type: application/json; charset=UTF-8
+16 > Content-Length: 39
+16 > Host: localhost:56933
+16 > Connection: Keep-Alive
+16 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+16 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:18.248 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+16 < 200
+16 < Content-Length: 88
+16 < Content-Type: application/json; charset=utf-8
+16 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b3bc3b53-7fd8-4d3b-8cfd-c4d816fec2f6"}}
+14:11:18.248 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #3
+14:11:18.751 [main] DEBUG com.intuit.karate - request:
+17 > GET http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/url
+17 > Host: localhost:56933
+17 > Connection: Keep-Alive
+17 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+17 > Accept-Encoding: gzip,deflate
+
+
+14:11:18.760 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+17 < 200
+17 < Content-Length: 72
+17 < Content-Type: application/json; charset=utf-8
+17 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/ajax-form-submit-demo.html"}
+14:11:18.762 [main] DEBUG com.intuit.karate - request:
+18 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/element
+18 > Content-Type: application/json; charset=UTF-8
+18 > Content-Length: 39
+18 > Host: localhost:56933
+18 > Connection: Keep-Alive
+18 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+18 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:18.769 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+18 < 200
+18 < Content-Length: 88
+18 < Content-Type: application/json; charset=utf-8
+18 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b3bc3b53-7fd8-4d3b-8cfd-c4d816fec2f6"}}
+14:11:18.770 [main] WARN  c.intuit.karate.driver.DriverOptions - waiting for document to change: failed after 3 retries and 1618 milliseconds
+14:11:18.772 [main] DEBUG com.intuit.karate - request:
+19 > POST http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/execute/sync
+19 > Content-Type: application/json; charset=UTF-8
+19 > Content-Length: 85
+19 > Host: localhost:56933
+19 > Connection: Keep-Alive
+19 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+19 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\"#submit-control\").textContent","args":[]}
+
+14:11:18.781 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+19 < 200
+19 < Content-Length: 39
+19 < Content-Type: application/json; charset=utf-8
+19 < cache-control: no-cache
+{"value":"Form submited Successfully!"}
+14:11:18.782 [main] DEBUG com.intuit.karate - request:
+20 > DELETE http://localhost:56933/session/8ac8603fff78514a976fe4d723380678/window
+20 > Host: localhost:56933
+20 > Connection: Keep-Alive
+20 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+20 > Accept-Encoding: gzip,deflate
+
+
+14:11:18.826 [main] DEBUG com.intuit.karate - response time in milliseconds: 44
+20 < 200
+20 < Content-Length: 12
+20 < Content-Type: application/json; charset=utf-8
+20 < cache-control: no-cache
+{"value":[]}
+14:11:18.828 [main] DEBUG com.intuit.karate - request:
+21 > DELETE http://localhost:56933/session/8ac8603fff78514a976fe4d723380678
+21 > Host: localhost:56933
+21 > Connection: Keep-Alive
+21 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+21 > Accept-Encoding: gzip,deflate
+
+
+14:11:18.859 [main] DEBUG com.intuit.karate - response time in milliseconds: 31
+21 < 200
+21 < Content-Length: 14
+21 < Content-Type: application/json; charset=utf-8
+21 < cache-control: no-cache
+{"value":null}
+14:11:18.860 [main] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1631263272500
+14:11:18.871 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 63139
+14:11:18.871 [main] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9515 not available, will use: 63139
+14:11:18.872 [main] DEBUG c.i.k.d.chromedriver_1631263278871 - poll attempt #0 for port to be ready - localhost:63139
+14:11:18.874 [chromedriver_1631263272500] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/resources/chromedriver.exe, --port=56933, --user-data-dir=E:\Dhawal_Automation\Karate\Karate-webui-framework-demo\target\chromedriver_1631263272500, --windows-size=1920,1080, --incognito, --no-sandbox] working dir: target\chromedriver_1631263272500
+14:11:18.875 [chromedriver_1631263278871] DEBUG c.i.k.d.chromedriver_1631263278871 - command: [src/test/java/resources/chromedriver.exe, --port=63139, --user-data-dir=E:\Dhawal_Automation\Karate\Karate-webui-framework-demo\target\chromedriver_1631263278871, --windows-size=1920,1080, --incognito, --no-sandbox], working dir: target\chromedriver_1631263278871
+14:11:18.940 [chromedriver_1631263278871-out] DEBUG c.i.k.d.chromedriver_1631263278871 - Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 63139
+14:11:18.940 [chromedriver_1631263278871-out] DEBUG c.i.k.d.chromedriver_1631263278871 - Only local connections are allowed.
+14:11:18.940 [chromedriver_1631263278871-out] DEBUG c.i.k.d.chromedriver_1631263278871 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+14:11:18.949 [chromedriver_1631263278871-out] DEBUG c.i.k.d.chromedriver_1631263278871 - ChromeDriver was started successfully.
+14:11:19.384 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:63139/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:63139
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+14:11:20.133 [main] DEBUG com.intuit.karate - response time in milliseconds: 749
+1 < 200
+1 < Content-Length: 790
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"93.0.4577.63","chrome":{"chromedriverVersion":"93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135})","userDataDir":"C:\\Users\\Dhawal\\AppData\\Local\\Temp\\scoped_dir10232_1224867790"},"goog:chromeOptions":{"debuggerAddress":"localhost:63142"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"583cffd9dd4967941fc813114d5f5b60"}}
+14:11:20.135 [main] DEBUG c.i.k.d.chromedriver_1631263278871 - init session id: 583cffd9dd4967941fc813114d5f5b60
+14:11:20.176 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 73
+2 > Host: localhost:63139
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+2 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/www.seleniumeasy.com\/test\/bootstrap-modal-demo.html"}
+
+14:11:21.104 [main] DEBUG com.intuit.karate - response time in milliseconds: 928
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+14:11:21.106 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:63139
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+14:11:21.230 [main] DEBUG com.intuit.karate - response time in milliseconds: 123
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":840,"width":1552,"x":-8,"y":-8}}
+14:11:21.233 [main] DEBUG com.intuit.karate - request:
+4 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+4 > Host: localhost:63139
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+4 > Accept-Encoding: gzip,deflate
+
+
+14:11:21.243 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+4 < 200
+4 < Content-Length: 71
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:21.245 [main] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 39
+5 > Host: localhost:63139
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+5 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:21.268 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+5 < 200
+5 < Content-Length: 88
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:21.270 [main] DEBUG com.intuit.karate - request:
+6 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/execute/sync
+6 > Content-Type: application/json; charset=UTF-8
+6 > Content-Length: 125
+6 > Host: localhost:63139
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+6 > Accept-Encoding: gzip,deflate
+{"script":"return document.evaluate(\"\/\/a[@href='#myModal']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+14:11:21.293 [main] DEBUG com.intuit.karate - response time in milliseconds: 23
+6 < 200
+6 < Content-Length: 14
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":null}
+14:11:21.296 [main] DEBUG com.intuit.karate - request:
+7 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+7 > Host: localhost:63139
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+7 > Accept-Encoding: gzip,deflate
+
+
+14:11:21.306 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+7 < 200
+7 < Content-Length: 71
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:21.308 [main] DEBUG com.intuit.karate - request:
+8 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+8 > Content-Type: application/json; charset=UTF-8
+8 > Content-Length: 39
+8 > Host: localhost:63139
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+8 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:21.317 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+8 < 200
+8 < Content-Length: 88
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:21.318 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #1
+14:11:21.822 [main] DEBUG com.intuit.karate - request:
+9 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+9 > Host: localhost:63139
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+9 > Accept-Encoding: gzip,deflate
+
+
+14:11:21.835 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+9 < 200
+9 < Content-Length: 71
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:21.838 [main] DEBUG com.intuit.karate - request:
+10 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+10 > Content-Type: application/json; charset=UTF-8
+10 > Content-Length: 39
+10 > Host: localhost:63139
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+10 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:21.848 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+10 < 200
+10 < Content-Length: 88
+10 < Content-Type: application/json; charset=utf-8
+10 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:21.848 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #2
+14:11:22.354 [main] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+11 > Host: localhost:63139
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+11 > Accept-Encoding: gzip,deflate
+
+
+14:11:22.360 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+11 < 200
+11 < Content-Length: 71
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:22.362 [main] DEBUG com.intuit.karate - request:
+12 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+12 > Content-Type: application/json; charset=UTF-8
+12 > Content-Length: 39
+12 > Host: localhost:63139
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+12 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:22.370 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+12 < 200
+12 < Content-Length: 88
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:22.371 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #3
+14:11:22.872 [main] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+13 > Host: localhost:63139
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+13 > Accept-Encoding: gzip,deflate
+
+
+14:11:22.877 [main] DEBUG com.intuit.karate - response time in milliseconds: 4
+13 < 200
+13 < Content-Length: 71
+13 < Content-Type: application/json; charset=utf-8
+13 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:22.878 [main] DEBUG com.intuit.karate - request:
+14 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+14 > Content-Type: application/json; charset=UTF-8
+14 > Content-Length: 39
+14 > Host: localhost:63139
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+14 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:22.886 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+14 < 200
+14 < Content-Length: 88
+14 < Content-Type: application/json; charset=utf-8
+14 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:22.886 [main] WARN  c.intuit.karate.driver.DriverOptions - waiting for document to change: failed after 3 retries and 1592 milliseconds
+14:11:22.888 [main] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+15 > Host: localhost:63139
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+15 > Accept-Encoding: gzip,deflate
+
+
+14:11:22.893 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+15 < 200
+15 < Content-Length: 71
+15 < Content-Type: application/json; charset=utf-8
+15 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:22.894 [main] DEBUG com.intuit.karate - request:
+16 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+16 > Content-Type: application/json; charset=UTF-8
+16 > Content-Length: 39
+16 > Host: localhost:63139
+16 > Connection: Keep-Alive
+16 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+16 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:22.902 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+16 < 200
+16 < Content-Length: 88
+16 < Content-Type: application/json; charset=utf-8
+16 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:22.904 [main] DEBUG com.intuit.karate - request:
+17 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/execute/sync
+17 > Content-Type: application/json; charset=UTF-8
+17 > Content-Length: 126
+17 > Host: localhost:63139
+17 > Connection: Keep-Alive
+17 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+17 > Accept-Encoding: gzip,deflate
+{"script":"return document.evaluate(\"\/\/a[@href='#myModal2']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+14:11:22.920 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+17 < 200
+17 < Content-Length: 14
+17 < Content-Type: application/json; charset=utf-8
+17 < cache-control: no-cache
+{"value":null}
+14:11:22.921 [main] DEBUG com.intuit.karate - request:
+18 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+18 > Host: localhost:63139
+18 > Connection: Keep-Alive
+18 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+18 > Accept-Encoding: gzip,deflate
+
+
+14:11:22.927 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+18 < 200
+18 < Content-Length: 71
+18 < Content-Type: application/json; charset=utf-8
+18 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:22.929 [main] DEBUG com.intuit.karate - request:
+19 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+19 > Content-Type: application/json; charset=UTF-8
+19 > Content-Length: 39
+19 > Host: localhost:63139
+19 > Connection: Keep-Alive
+19 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+19 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:22.940 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+19 < 200
+19 < Content-Length: 88
+19 < Content-Type: application/json; charset=utf-8
+19 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:22.941 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #1
+14:11:23.455 [main] DEBUG com.intuit.karate - request:
+20 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+20 > Host: localhost:63139
+20 > Connection: Keep-Alive
+20 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+20 > Accept-Encoding: gzip,deflate
+
+
+14:11:23.462 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+20 < 200
+20 < Content-Length: 71
+20 < Content-Type: application/json; charset=utf-8
+20 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:23.463 [main] DEBUG com.intuit.karate - request:
+21 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+21 > Content-Type: application/json; charset=UTF-8
+21 > Content-Length: 39
+21 > Host: localhost:63139
+21 > Connection: Keep-Alive
+21 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+21 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:23.470 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+21 < 200
+21 < Content-Length: 88
+21 < Content-Type: application/json; charset=utf-8
+21 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:23.471 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #2
+14:11:23.977 [main] DEBUG com.intuit.karate - request:
+22 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+22 > Host: localhost:63139
+22 > Connection: Keep-Alive
+22 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+22 > Accept-Encoding: gzip,deflate
+
+
+14:11:23.982 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+22 < 200
+22 < Content-Length: 71
+22 < Content-Type: application/json; charset=utf-8
+22 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:23.984 [main] DEBUG com.intuit.karate - request:
+23 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+23 > Content-Type: application/json; charset=UTF-8
+23 > Content-Length: 39
+23 > Host: localhost:63139
+23 > Connection: Keep-Alive
+23 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+23 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:23.991 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+23 < 200
+23 < Content-Length: 88
+23 < Content-Type: application/json; charset=utf-8
+23 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:23.991 [main] DEBUG c.intuit.karate.driver.DriverOptions - waiting for document to change - retry #3
+14:11:24.499 [main] DEBUG com.intuit.karate - request:
+24 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+24 > Host: localhost:63139
+24 > Connection: Keep-Alive
+24 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+24 > Accept-Encoding: gzip,deflate
+
+
+14:11:24.505 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+24 < 200
+24 < Content-Length: 71
+24 < Content-Type: application/json; charset=utf-8
+24 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:24.506 [main] DEBUG com.intuit.karate - request:
+25 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+25 > Content-Type: application/json; charset=UTF-8
+25 > Content-Length: 39
+25 > Host: localhost:63139
+25 > Connection: Keep-Alive
+25 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+25 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:24.514 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+25 < 200
+25 < Content-Length: 88
+25 < Content-Type: application/json; charset=utf-8
+25 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:24.514 [main] WARN  c.intuit.karate.driver.DriverOptions - waiting for document to change: failed after 3 retries and 1594 milliseconds
+14:11:24.516 [main] DEBUG com.intuit.karate - request:
+26 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+26 > Host: localhost:63139
+26 > Connection: Keep-Alive
+26 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+26 > Accept-Encoding: gzip,deflate
+
+
+14:11:24.521 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+26 < 200
+26 < Content-Length: 71
+26 < Content-Type: application/json; charset=utf-8
+26 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:24.522 [main] DEBUG com.intuit.karate - request:
+27 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+27 > Content-Type: application/json; charset=UTF-8
+27 > Content-Length: 39
+27 > Host: localhost:63139
+27 > Connection: Keep-Alive
+27 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+27 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:24.529 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+27 < 200
+27 < Content-Length: 88
+27 < Content-Type: application/json; charset=utf-8
+27 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b9e0ca17-c757-49f0-83e1-e11b17ee6620"}}
+14:11:24.531 [main] DEBUG com.intuit.karate - request:
+28 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/execute/sync
+28 > Content-Type: application/json; charset=UTF-8
+28 > Content-Length: 190
+28 > Host: localhost:63139
+28 > Connection: Keep-Alive
+28 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+28 > Accept-Encoding: gzip,deflate
+{"script":"return document.evaluate(\"\/\/div[@id='myModal2']\/\/a[@class='btn btn-primary'][normalize-space()='Save changes']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+14:11:24.666 [main] DEBUG com.intuit.karate - response time in milliseconds: 135
+28 < 200
+28 < Content-Length: 14
+28 < Content-Type: application/json; charset=utf-8
+28 < cache-control: no-cache
+{"value":null}
+14:11:24.667 [main] DEBUG com.intuit.karate - request:
+29 > GET http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/url
+29 > Host: localhost:63139
+29 > Connection: Keep-Alive
+29 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+29 > Accept-Encoding: gzip,deflate
+
+
+14:11:24.672 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+29 < 200
+29 < Content-Length: 71
+29 < Content-Type: application/json; charset=utf-8
+29 < cache-control: no-cache
+{"value":"https://www.seleniumeasy.com/test/bootstrap-modal-demo.html"}
+14:11:24.673 [main] DEBUG com.intuit.karate - request:
+30 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/element
+30 > Content-Type: application/json; charset=UTF-8
+30 > Content-Length: 39
+30 > Host: localhost:63139
+30 > Connection: Keep-Alive
+30 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+30 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"html"}
+
+14:11:24.682 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+30 < 200
+30 < Content-Length: 88
+30 < Content-Type: application/json; charset=utf-8
+30 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"74041038-5531-4c7a-b90d-7476a5578de6"}}
+14:11:24.684 [main] DEBUG com.intuit.karate - request:
+31 > POST http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/execute/sync
+31 > Content-Type: application/json; charset=UTF-8
+31 > Content-Length: 166
+31 > Host: localhost:63139
+31 > Connection: Keep-Alive
+31 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+31 > Accept-Encoding: gzip,deflate
+{"script":"return document.evaluate(\"\/\/h2[contains(.,'Bootstrap Modal Example for Automation')]\", document, null, 9, null).singleNodeValue.textContent","args":[]}
+
+14:11:24.692 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+31 < 200
+31 < Content-Length: 50
+31 < Content-Type: application/json; charset=utf-8
+31 < cache-control: no-cache
+{"value":"Bootstrap Modal Example for Automation"}
+14:11:24.694 [main] DEBUG com.intuit.karate - request:
+32 > DELETE http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60/window
+32 > Host: localhost:63139
+32 > Connection: Keep-Alive
+32 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+32 > Accept-Encoding: gzip,deflate
+
+
+14:11:24.778 [main] DEBUG com.intuit.karate - response time in milliseconds: 84
+32 < 200
+32 < Content-Length: 12
+32 < Content-Type: application/json; charset=utf-8
+32 < cache-control: no-cache
+{"value":[]}
+14:11:24.779 [main] DEBUG com.intuit.karate - request:
+33 > DELETE http://localhost:63139/session/583cffd9dd4967941fc813114d5f5b60
+33 > Host: localhost:63139
+33 > Connection: Keep-Alive
+33 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_271)
+33 > Accept-Encoding: gzip,deflate
+
+
+14:11:24.824 [main] DEBUG com.intuit.karate - response time in milliseconds: 45
+33 < 200
+33 < Content-Length: 14
+33 < Content-Type: application/json; charset=utf-8
+33 < cache-control: no-cache
+{"value":null}
+14:11:24.824 [main] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1631263278871
+14:11:24.834 [chromedriver_1631263278871] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/resources/chromedriver.exe, --port=63139, --user-data-dir=E:\Dhawal_Automation\Karate\Karate-webui-framework-demo\target\chromedriver_1631263278871, --windows-size=1920,1080, --incognito, --no-sandbox] working dir: target\chromedriver_1631263278871
